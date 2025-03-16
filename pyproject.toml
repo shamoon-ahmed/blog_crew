@@ -1,0 +1,23 @@
+[project]
+name = "crew-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Samson Rizz", email = "samsonrizzy6@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "litellm>=1.0.0"
+]
+
+[project.scripts]
+crewflow = "crew_flow.main:kickoff"
+run_crew = "crew_flow.main:kickoff"
+crewflowplot = "crew_flow.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
